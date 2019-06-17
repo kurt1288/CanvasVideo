@@ -10,16 +10,21 @@ CanvasVideo.js is a basic implementation of the [MediaStream Recording API](http
 ### Installing
 Download CanvasVideo.js and add it with the normal script tag:
 
-    <script src="canvasvideo.js"></script>
-
+```html
+<script src="canvasvideo.js"></script>
+```
 or you can import it if you are using modules:
 
-    import { CanvasVideo } from "canvasvideo.js"
-    
+```javascript
+import { CanvasVideo } from "canvasvideo.js"
+```
+
 ### Usage
 First you must create a new video:
 
-    const video = new CanvasVideo(canvas[, framerate, bitrate]);
+```javascript
+const video = new CanvasVideo(canvas[, framerate, bitrate]);
+```
 
 Parameters:
 
@@ -33,16 +38,22 @@ Parameters:
 
 After you have create the video, you can begin capture with:
 
-    video.Start();
-    
+```javascript
+video.Start();
+```
+
 When recording is complete:
 
-    video.Stop();
-    
+```javascript
+video.Stop();
+```
+ 
 When you wish to save the video:
 
-    video.Save([filename]);
-    
+```javascript
+video.Save([filename]);
+```
+
 A filename is optional. If no filename is specified, "*canvasvideo.webm*" will be used.
 
 ## License
